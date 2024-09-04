@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+
+<style>
+    body{
+       
+        background: #c8f3f9;
+    }
+    h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+     .gallery-img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            margin: 60px auto;
+            border-radius: 20px;
+        }
+    .btn-container {
+            position: relative;
+            width: fit-content;
+            display: block;
+            margin: 10px auto;
+        }
+        .btn {
+            height: 50px;
+            margin: 0 10px;
+            cursor: pointer;
+            position: absolute;
+            top: 70px;
+        }
+        .btn-left{
+            left: -90px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin-right:30 ;
+        }
+        .btn-right{
+            right: -90px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+</style>
+   
+</head>
+
+<body>
+    <h1>IMAGE SLIDER</h1>
+    <div class="btn-container">
+        <img src="./images/AA.png" class="gallery-img" id="img">
+        <img src="./images/prev-arrow.png" class="btn btn-left" onclick="prev()" />
+        <img src="./images/next-arrow.png" class="btn btn-right" onclick="next()" />  
+    </div>
+
+   
+        //function to show previous image
+        
+        //function to show next image
+       
+    </script>
+</body>
+
+</html>
